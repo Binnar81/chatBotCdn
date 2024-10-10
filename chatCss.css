@@ -1,0 +1,46 @@
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    z-index: 100;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .visible-button {
+    width: 60px;
+    height: 60px;
+    opacity: 1;
+  }
+
+  .chatbot-button img {
+    width: 40px;
+    height: 40px;
+  }
+  .resizable {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: transparent;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 0;
+    z-index: 90;
+    border-radius: 0.75rem;
+  }
+  .expanded {
+    width: 300px;
+    height: 500px;
+    opacity: 1;
+  }
